@@ -1,0 +1,7 @@
+def move_zeros(lst):
+    for i in range(0, len(lst)):
+        if lst[i] == 0:
+            lst.append(lst.pop(i))
+    return lst
+
+print(move_zeros([1, 0, 2, 0]))
