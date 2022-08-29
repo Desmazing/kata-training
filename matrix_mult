@@ -1,5 +1,5 @@
 # the first implementation is a very manual way of solving [2X2] and [3X3] matrices
-# method 2 leverages numpy library to multiply matrices of any dimension
+# method 2 leverages numpy library to multiply matrices of any dimension. test cases not run yet
 
 import numpy as np
 
