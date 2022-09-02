@@ -1,4 +1,5 @@
-# return a list of anagrams given a word and an array of words\
+# return a list of anagrams given a word and an array of words
+# an anagram is a word or phrase acheived by rearranging the letters of a different word or phrase
 # for instance anagrams('abba', ['bbaa', 'aabb', 'abcd', 'efgh', 'abdf'])
 # the above case returns ['bbaa', 'aabb']
 
