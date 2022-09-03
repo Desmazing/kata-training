@@ -24,6 +24,6 @@ def no_of_ips2(ip1, ip2):
     return total2-total1
 
 
-test1 = print(no_of_ips('10.0.0.0', '10.0.1.0'))  # test case for function 1
-test2 = print(no_of_ips('10.0.0.0', '10.0.0.50')) # test case for function 2
-test2 = print(no_of_ips2('20.0.0.0', '20.2.0.0'))
+test1 = print(no_of_ips('10.0.0.0', '10.0.1.0'))  # test case 1 for function 1
+test2 = print(no_of_ips('10.0.0.0', '10.0.0.50')) # test case 2 for function 1
+test2 = print(no_of_ips2('20.0.0.0', '20.2.0.0')) # test case for function 2
