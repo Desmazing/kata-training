@@ -14,8 +14,9 @@ def no_of_ips2(ip1, ip2):
     total1, total2 = 0, 0
     for ind,num in enumerate(reversed(ip1)):
         total1 += int(num) * (256 ** ind)
-    return total1
-    
+    for ind,num in enumerate(reversed(ip2)):
+        total2 += int(num) * (256 ** ind)
+    return total2-total1
 
 
 test1 = print(no_of_ips('10.0.0.0', '10.0.1.0'))
