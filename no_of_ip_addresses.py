@@ -13,6 +13,8 @@ def no_of_ips(ip1, ip2):
 
 
 def no_of_ips2(ip1, ip2):
+    """this version uses for loops to compute the total no of ip addresses
+    in each section of the ipv4 addresses"""
     ip1, ip2 = ip1.split('.'), ip2.split('.')
     total1, total2 = 0, 0
     for ind,num in enumerate(reversed(ip1)):
