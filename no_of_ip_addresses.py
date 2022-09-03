@@ -9,4 +9,4 @@ def no_of_ips(ip1, ip2):
     return total_2 - total_1
 
 
-
+test1 = print(no_of_ips('10.0.0.0', '10.0.1.0'))
