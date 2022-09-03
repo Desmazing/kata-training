@@ -9,6 +9,11 @@ def no_of_ips(ip1, ip2):
     return total_2 - total_1
 
 
+def no_of_ips2(ip1, ip2):
+    ip1, ip2 = ip1.split('.'), ip2.split('.')
+    for num in reversed(ip1):
+        pass
+
 test1 = print(no_of_ips('10.0.0.0', '10.0.1.0'))
 test2 = print(no_of_ips('10.0.0.0', '10.0.0.50'))
 test2 = print(no_of_ips('20.0.0.0', '20.2.0.0'))
