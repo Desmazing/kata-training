@@ -7,4 +7,12 @@ def longest(a1, a2):
     return ''.join(sorted(output))
 
 
-test1 = print(longest("aretheyhere", "yestheyarehere"))
+def longest2(a1, a2):
+    return ''.join(sorted(set(a1 + a2)))
+
+
+a1 = "aretheyhere"
+a2 = "yestheyarehere"
+
+test1 = print(longest(a1, a2))
+test2 = print(longest2(a1, a2))
