@@ -1,6 +1,7 @@
 #  this function takes and input of two ipv4 addresses(strings) eg. 10.0.0.0and 
 # returns the no. of ip addresses between them excluding the last one
 # the latter is always larger than the former
+# to create a version for iPv6 addresses 
 
 
 def no_of_ips(ip1, ip2):
