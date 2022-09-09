@@ -25,6 +25,6 @@ def find_nb2(m):
     return -1
 
 
-test = print(find_nb(4183059834009)) 
-test2 = print(find_nb2(4183059834009))
-test2 = print(find_nb(24723578342962))
+test = print(find_nb(4183059834009)) # should return 2022
+test2 = print(find_nb2(4183059834009)) # should return 2022
+test2 = print(find_nb(24723578342962)) # should return -1
