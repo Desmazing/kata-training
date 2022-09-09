@@ -5,9 +5,7 @@
 
 def find_nb(m):
     """this is an implementation with a while loop"""
-    total = 0
-    counter = 0
-    nb = 1
+    total, counter, nb = 0, 0, 1
     while total != m:
         total += nb ** 3
         counter += 1
@@ -18,8 +16,7 @@ def find_nb(m):
 
 def find_nb2(m):
     """this implementation is done with a for loop"""
-    total = 0
-    counter = 0
+    total, counter = 0, 0
     for i in range(1, m):
         total += i ** 3
         counter += 1
