@@ -17,7 +17,12 @@ def reverse_words2(text):
     return ' '.join(b)
 
 
+def reverse_words3(text):
+    """this is intended to refactor the above two functions"""
+    return ' '.join(s[::-1] for s in text.split(' '))
+
+
 test1 = print(reverse_words('The quick brown fox jumps over the lazy dog.'))
-test2 = print(reverse_words('apple'))
-test3 = print(reverse_words('a b c d')) # should return the same string
-test4 = print(reverse_words2('double  spaced  words'))
+test2 = print(reverse_words3('apple'))
+test3 = print(reverse_words3('a b c d')) # should return the same string
+test4 = print(reverse_words3('double  spaced  words'))
