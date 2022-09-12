@@ -1,5 +1,5 @@
 def reverse_words(text):
-    """this function is not a solution for double spaced words"""
+    """this function is not a perfect solution for double spaced words"""
     a = text.split()
     b = []
     for i in a:
