@@ -18,3 +18,4 @@ def sum_mix2(arr):
 
 test1 = print(sum_mix([1,'2']))
 test2 = print(sum_mix2([1,2,4,'4','3',6, '7']))
+test3 = print(sum_mix([2,'4','5']))
