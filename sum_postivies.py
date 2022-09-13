@@ -3,12 +3,17 @@
 
 
 def array_sort(arr):
+    """this function has too many lines.
+    to be refactored"""
     neg = []
     pos = 0
     for i in arr:
         if i < 0: neg.append(i)
         elif i > 0: pos += 1
     return [neg, pos]
+
+
+
 
 
 test1 = print(array_sort([-1,2,1,3]))
