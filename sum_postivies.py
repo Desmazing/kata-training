@@ -13,7 +13,9 @@ def array_sort(arr):
     return [neg, pos]
 
 
-
+def array_sort2(arr):
+    """this is a refactored version of function 1"""
+    
 
 
 test1 = print(array_sort([-1,2,1,3]))
