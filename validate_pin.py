@@ -15,8 +15,8 @@ def validate_pin2(pin):
 
 
 test1 = print(validate_pin('1234'))
-test2 = print(validate_pin("-1234"))
+test2 = print(validate_pin2("-1234"))
 test3 = print(validate_pin("1.234"))
 test4 = print(validate_pin2("00000000"))
-test5 = print(validate_pin("a234"))
-test6 = print(validate_pin("124234"))
+test5 = print(validate_pin2("124234"))
+test6 = print(validate_pin("a234"))
