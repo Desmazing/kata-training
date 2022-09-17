@@ -13,3 +13,5 @@ def consecutive_pow(a,b):
 
 
 test1 = print(consecutive_pow(1,10))
+test2 = print(consecutive_pow(1,100))
+test3 = print(consecutive_pow(10,89))
