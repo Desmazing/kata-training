@@ -21,3 +21,4 @@ def divided_by(n=None): return lambda a: a // n
 test1 = print(seven(plus(five())))
 test2 = print(four(minus(2)))
 test3 = print(six(times(seven())))
+test4 = print(nine(divided_by(three())))
