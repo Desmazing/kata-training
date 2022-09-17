@@ -18,7 +18,7 @@ def times(n=None): return lambda a: a * n
 def divided_by(n=None): return lambda a: a // n
 
 
-test1 = print(seven(plus(five())))
-test2 = print(four(minus(2)))
-test3 = print(six(times(seven())))
-test4 = print(nine(divided_by(three())))
+test1 = print(seven(plus(five()))) # should return 12
+test2 = print(four(minus(two()))) # should return 2
+test3 = print(six(times(seven()))) # should return 42
+test4 = print(nine(divided_by(three()))) # should return 3
