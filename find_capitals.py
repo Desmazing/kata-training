@@ -9,6 +9,11 @@ def capitals(word):
     return lst
 
 
+def capitals2(word):
+    """this is a refactored version of the above"""
+    return [i for i,c in enumerate(word) if c.isupper()]
+
 
 test1 = print(capitals('SoshdPeqVSqntphhcKYsDmUnHtMuJ'))
 test2 = print(capitals('aCcCdDD'))
+test3 = print(capitals2('abDsE'))
