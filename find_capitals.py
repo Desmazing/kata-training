@@ -11,4 +11,4 @@ def capitals(word):
 
 
 test1 = print(capitals('SoshdPeqVSqntphhcKYsDmUnHtMuJ'))
-
+test2 = print(capitals('aCcCdDD'))
