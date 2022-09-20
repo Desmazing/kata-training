@@ -10,4 +10,10 @@ def unique(n):
     return a[0]
 
 
+def unique2(n):
+    """this is a refactored version of the above function"""
+    a,b = set(n)
+    return b
+
+
 test1 = print(unique([1,2,1,1,1,1])) # should return 2
