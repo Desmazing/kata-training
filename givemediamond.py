@@ -6,9 +6,9 @@ def diamond(n):
     elif n==1: return '*\n'
 
 
-test1 = print(diamond(0))
-test2 = print(diamond(1))
-test3 = print(diamond(2))
-test4 = print(diamond(3))
-test5 = print(diamond(4))
-test6 = print(diamond(5))
+test0 = print(diamond(0))
+test1 = print(diamond(1))
+test2 = print(diamond(2))
+test3 = print(diamond(3))
+test4 = print(diamond(4))
+test5 = print(diamond(5))
