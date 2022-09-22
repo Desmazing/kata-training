@@ -10,3 +10,5 @@ def mult(arr):
 
 def mult1(arr):
     """this is a refactored version of the above function"""
+    mult = lambda x, y: x*y, arr
+    return mult
