@@ -2,4 +2,8 @@
 
 
 def mult(arr):
-    pass
+    mult = 1
+    for i in arr:
+        mult *= i
+    return mult
+
