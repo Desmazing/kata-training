@@ -16,7 +16,7 @@ def greet(language):
 
 
 def greet2(language):
-    """"""
+    """this is a refactored version using dictionary get method"""
     db.get(language,'Welcome')
 
 
