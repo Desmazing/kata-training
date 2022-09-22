@@ -13,7 +13,7 @@ def mult(arr):
 
 
 def mult1(arr):
-    """this is a refactored version of the above function"""
+    """this is a refactored version using a lambda function"""
     return reduce(lambda x, y: x*y, arr)
 
 
