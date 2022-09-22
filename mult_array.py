@@ -1,0 +1,2 @@
+def mult(arr):
+    pass
