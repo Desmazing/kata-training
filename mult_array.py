@@ -15,3 +15,4 @@ def mult1(arr):
 
 
 test1 = print(mult([1,2,3]))
+test2 = print(mult([2,3,6,7]))
