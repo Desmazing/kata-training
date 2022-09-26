@@ -33,8 +33,18 @@ def check_coupon2(entered_code, correct_code, current_date, expiration_date):
     return True
 
 
+def check_coupon3(entered_code, correct_code, current_date, expiration_date):
+    """an even more refactored version...still using strptime() method"""
+    date1 = datetime.strptime(current_date, '%B %d, %Y')
+    date2 = datetime.strptime(expiration_date, '%B %d, %Y')
+    return entered_code is correct_code and date2 > date1
+
+
 test1 = print(check_coupon('123','123','September 5, 2022','September 5, 2023'))
 test2 = print(check_coupon('123','123a', 'October 10, 2022', 'May 5, 2022'))
 print('\n')
 test3 = print(check_coupon2('123','123','September 5, 2022','September 5, 2023'))
 test4 = print(check_coupon2('123','123a', 'October 10, 2022', 'May 5, 2022'))
+print('\n')
+test5 = print(check_coupon2('123','123','September 5, 2022','September 5, 2023'))
+test6 = print(check_coupon2('123','123a', 'October 10, 2022', 'May 5, 2022'))
