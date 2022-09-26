@@ -3,6 +3,8 @@ def mults(n):
 
 
 def comp(array1, array2):
+    """uses the map function to iterate through the list creating squares
+    this uses 2 functions"""
     try:
         res = list(map(mults, sorted(array1)))
         return res == sorted(array2)
@@ -10,6 +12,7 @@ def comp(array1, array2):
         return False
 
 def comp2(array1, array2):
+    """this is a refactored version using only one function"""
     try:
         return sorted([i**2 for i in array1]) == sorted(array2)
     except:
