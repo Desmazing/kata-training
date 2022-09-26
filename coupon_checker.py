@@ -23,7 +23,18 @@ def check_coupon(entered_code, correct_code, current_date, expiration_date):
     return True
 
 
+def check_coupon2(entered_code, correct_code, current_date, expiration_date):
+    """this is a refactored version using strptime() to create a date-time object from the given dates
+    it is more comprehensive"""
+    if entered_code != correct_code: return False
+    date1 = datetime.strptime(current_date, '%B %d, %Y')
+    date2 = datetime.strptime(expiration_date, '%B %d, %Y')
+    if date1 > date2: return False
+    return True
 
 
 test1 = print(check_coupon('123','123','September 5, 2022','September 5, 2023'))
 test2 = print(check_coupon('123','123a', 'October 10, 2022', 'May 5, 2022'))
+print('\n')
+test3 = print(check_coupon2('123','123','September 5, 2022','September 5, 2023'))
+test4 = print(check_coupon2('123','123a', 'October 10, 2022', 'May 5, 2022'))
