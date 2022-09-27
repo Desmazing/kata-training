@@ -1,7 +1,7 @@
 #  make minimal changes to a string to convert it to all uppercase or lowercase
 
 
-def fix_case(s):
+def fixCase(s):
     upper = 0
     lower = 0
     for i in s:
@@ -12,7 +12,13 @@ def fix_case(s):
     return s.upper()
 
 
-test1 = print(fix_case('CODe'))
-test2 = print(fix_case('code'))
-test3 = print(fix_case('coDE'))
-test4 = print(fix_case('Code'))
+def fixCase2(s):
+    """this is a refactored version of the above code
+    it uses the map function"""
+    return s.upper() if sum(map(str.isupper, s)) * 2 > len(s) else s.lower()
+
+
+test1 = print(fixCase('CODe'))
+test2 = print(fixCase('code'))
+test3 = print(fixCase2('coDE'))
+test4 = print(fixCase2('Code'))
