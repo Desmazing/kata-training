@@ -7,6 +7,7 @@ class Ball(object):
         self.type = type
 
     def __str__(self):
+        """this returns the type of ball 2 as a string"""
         return str(self.type)
 
 
