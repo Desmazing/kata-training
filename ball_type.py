@@ -6,9 +6,14 @@ class Ball(object):
     def __init__(self, type = 'regular'):
         self.type = type
 
+    def __str__(self):
+        return str(self.type)
+
 
 ball1 = Ball()
 print(ball1.type)
 
 ball2 = Ball("super")
 print(ball2.type)
+
+print(ball2)
