@@ -23,5 +23,5 @@ def thirt2(n):
 
 test1 = print(thirt(8529))
 test2 = print(thirt(5634))
-test3 = print(thirt(1111111111))
+test3 = print(thirt2(1111111111))
 test4 = print(thirt2(987654321))
