@@ -14,7 +14,7 @@ def thirt(n):
     
 
 def thirt2(n):
-    """still pending final solution"""
+    """still pending final refactor"""
     strn = str(n)[::-1]
     m = sum(lst[i % 6] * int(strn[i]) for i in range(len(strn)))
     return n if n == m else thirt(m)
