@@ -2,6 +2,8 @@
 
 
 def duplicate_count(text):
+    """complete solution
+    to be refactored"""
     text = text.lower()
     distinct = set()
     for i in text:
@@ -9,6 +11,10 @@ def duplicate_count(text):
             distinct.add(i)
             continue
     return len(distinct)
+
+
+def duplicate_count2(text):
+    return len()
 
 
 test1 = print(duplicate_count('abcde'))
