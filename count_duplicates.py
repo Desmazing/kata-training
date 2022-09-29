@@ -14,6 +14,7 @@ def duplicate_count(text):
 
 
 def duplicate_count2(text):
+    """this is a refactored version"""
     return len([c for c in set(text.lower()) if text.lower().count(c) > 1])
 
 
