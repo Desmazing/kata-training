@@ -14,9 +14,9 @@ def duplicate_count(text):
 
 
 def duplicate_count2(text):
-    return len()
+    return len([c for c in set(text.lower()) if text.lower().count(c) > 1])
 
 
 test1 = print(duplicate_count('abcde'))
 test2 = print(duplicate_count('indivisible'))
-test2 = print(duplicate_count('aabbccddefgh'))
+test2 = print(duplicate_count2('aabbccddefgh'))
