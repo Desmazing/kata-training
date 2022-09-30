@@ -1,4 +1,5 @@
-#  find the maximum product of adjacent elements in an araay
+#  find the maximum product of adjacent elements in an array
+#  the second solution uses the zip function
 
 
 def max_product(arr):
