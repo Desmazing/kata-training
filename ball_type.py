@@ -16,6 +16,5 @@ print(ball1.type)
 
 ball2 = Ball("super")
 print(ball2.type)
-
 print(ball1)
 print(ball2)

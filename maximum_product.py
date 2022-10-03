@@ -14,7 +14,7 @@ def max_product(arr):
 
 def max_product2(arr):
     """refactored using zip function solution inspired by one-liner return statements"""
-    return max([a * b for a,b in zip(arr, arr[1:])]) 
+    return max([a * b for a,b in zip(arr, arr[1:])])
 
 
 test1 = print(max_product([5, 8])) # 40
