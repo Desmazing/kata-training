@@ -18,13 +18,22 @@ def increment_string(s):
     except ValueError:
         return s + '1'
 
+def increment_string2(s):
+    digit_part = ''    
+    for i in s[::-1]:
+        if not i.isdigit(): break
+        else: digit_part += i
+    # print(digit_part)
+    try:
+        return f'{str(int(digit_part[::-1]) + 1)}'.join(s.rsplit(f'{digit_part}', 1))
+    except ValueError:
+        return s + '1'
 
-test1 = print(increment_string('foo')) # should return 'foo1'
-test2 = print(increment_string('')) # should return ''
+
+test1 = print(increment_string2('foo')) # should return 'foo1'
+test2 = print(increment_string2('')) # should return ''
 test3 = print(increment_string('foo24')) # should return 'foo25'
 test4 = print(increment_string('hello234')) # should return 'hello235'
-test5 = print(increment_string('mane001')) # should return mane002
-test6 = print(increment_string('foo99')) # should return foo100
-
-# ================
-# unconsidered edge cases... 'foo99bar99' should return foo99bar100
+test5 = print(increment_string('mane001')) # should return 'mane002'
+test6 = print(increment_string('foo99')) # should return 'foo100'
+test7 = print(increment_string2('foo99bar99')) # shoudl return 'foo99bar100'
