@@ -3,7 +3,8 @@ import re
 
 def validate_user(username):
     """validate username using regex
-    use match method where: the username contains 4-16 characters in [a-z0-9_]"""
+    use match method where: the username contains 4-16 characters in [a-z0-9_]
+    Does this work though?"""
     return bool(re.match("^[a-z0-9_]{7,}$",username)) != None
 
 
