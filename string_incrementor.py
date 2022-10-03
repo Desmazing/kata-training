@@ -25,3 +25,6 @@ test3 = print(increment_string('foo24')) # should return 'foo25'
 test4 = print(increment_string('hello234')) # should return 'hello235'
 test5 = print(increment_string('mane001')) # should return mane002
 test6 = print(increment_string('foo99')) # should return foo100
+
+# ================
+# unconsidered edge cases... 'foo99bar99' should return foo99bar100
