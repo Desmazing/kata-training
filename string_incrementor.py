@@ -6,6 +6,8 @@
 
 
 def increment_string(s):
+    """this solution does not consider edge cases where 
+    the digits are in the middle of the string s"""
     if s == '': return ''
     str_part = ''
     digit_part = ''
@@ -19,6 +21,7 @@ def increment_string(s):
         return s + '1'
 
 def increment_string2(s):
+    """this solution is applicable for all tests"""
     digit_part = ''    
     for i in s[::-1]:
         if not i.isdigit(): break
