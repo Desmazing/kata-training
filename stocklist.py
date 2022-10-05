@@ -2,7 +2,7 @@
 
 
 def stock_list(l_Art, l_Cat):
-    qty_dict =  {}
+    if not l_Art or not l_Cat: return ''
     survey_dict = {}
     output = ''
     for i in l_Art:
