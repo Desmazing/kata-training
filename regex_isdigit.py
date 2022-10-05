@@ -1,5 +1,6 @@
 #  check whether an input is a digit between 0-9
 
+
 import re
 
 
@@ -12,7 +13,7 @@ def check_digit(n):
 
 def check_digit2(n):
     """function uses regex module to find a decimal match"""
-    
+
     return bool(re.match('\d\Z', n))
 
 
