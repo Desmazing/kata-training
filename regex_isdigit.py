@@ -24,7 +24,7 @@ def check_digit3(n):
 
 
 check_digit4 = lambda n: len(n) == 1 and n in '0123456789'
-# uses lambda expressions 
+""" uses lambda expressions """
 
 
 test1 = print(check_digit('1'))
