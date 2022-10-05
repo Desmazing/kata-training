@@ -2,6 +2,14 @@
 
 
 def stock_list(l_Art, l_Cat):
+    """Function to return total quantity of books per category
+    Args:
+        l_Art(list): list with elements in the form 'book_codes quantity' eg. ['BBAR 200', 'AATY 20']
+        l_Cat(list): list of book categories e.g. ['B', 'C', 'Z']
+    Returns:
+        String: Formatted version of Categories from l_Cat and the total qauntities computed from l_Art
+    """
+    
     if not l_Art or not l_Cat: return ''
     survey_dict = {}
     output = ''
