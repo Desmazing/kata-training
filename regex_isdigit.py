@@ -12,9 +12,15 @@ def check_digit(n):
 
 
 def check_digit2(n):
-    """function uses regex module to find a decimal match"""
+    """function uses regex match method to find a decimal match"""
 
     return bool(re.match('\d\Z', n))
+
+
+def check_digit3(n):
+    """function uses regex fullmatch method"""
+
+    return bool(re.fullmatch(r'\d', n))
 
 
 test1 = print(check_digit('1'))
@@ -23,3 +29,4 @@ test3 = print(check_digit('n'))
 test4 = print(check_digit2('n'))
 test5 = print(check_digit('14'))
 test6 = print(check_digit2('14'))
+test6 = print(check_digit3('14'))
