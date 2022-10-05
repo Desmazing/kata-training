@@ -23,10 +23,14 @@ def check_digit3(n):
     return bool(re.fullmatch(r'\d', n))
 
 
+check_digit4 = lambda n: len(n) == 1 and n in '0123456789'
+# uses lambda expressions 
+
+
 test1 = print(check_digit('1'))
 test2 = print(check_digit2('1'))
 test3 = print(check_digit('n'))
 test4 = print(check_digit2('n'))
 test5 = print(check_digit('14'))
 test6 = print(check_digit2('14'))
-test6 = print(check_digit3('14'))
+test6 = print(check_digit4('14'))
