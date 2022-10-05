@@ -4,10 +4,15 @@ import re
 
 
 def check_digit(n):
+    """function uses string.isdigit() method to check if n is a digit
+    extra condition is the length of 1"""
+
     return n.isdigit() and len(n) == 1
 
 
 def check_digit2(n):
+    """function uses regex module to find a decimal match"""
+    
     return bool(re.match('\d\Z', n))
 
 
