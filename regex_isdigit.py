@@ -1,4 +1,8 @@
-#  check whether an input is a digit between 0-9
+"""
+    check whether an input is a digit between 0-9
+    use of regex module
+    
+"""
 
 
 import re
