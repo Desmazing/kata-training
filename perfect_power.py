@@ -58,5 +58,3 @@ test10 = print(is_perfect_power2(125))
 test11 = print(is_perfect_power3(216))
 test12 = print(is_perfect_power3(343))
 test13 = print(is_perfect_power3(16850581551))
-
-# test14 = print(is_perfect_power2(16850581551))
