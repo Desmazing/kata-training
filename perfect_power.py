@@ -26,7 +26,9 @@ def is_perfect_power(n):
 
 
 def is_perfect_power2(n):
-    
+    """this is more efficient compared to is_perfect_power()
+        still not functional for all cases."""
+
     for i in range(2, 100):
         if int(n ** (1/i)) == n ** (1/i):
             return [n ** (1/i), i]
@@ -36,7 +38,7 @@ def is_perfect_power2(n):
 def is_perfect_power3(n):
     """this is the perfect solution
         utilises the perfect_power method of the sympy module
-
+        functional for all cases; including large integers
     """
     x,y = perfect_power(n)
     return [x,y] or None
