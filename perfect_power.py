@@ -3,6 +3,10 @@
     and there exists m > 1 and k > 1; such that m ^ k == n
 """
 
+
+from sympy import perfect_power
+
+
 def is_perfect_power(n):
     """function computes whether a given integer is a perfect power
         highly inefficient for large values of n.
@@ -22,12 +26,32 @@ def is_perfect_power(n):
 
 
 def is_perfect_power2(n):
-    pass
+    
+    for i in range(2, 100):
+        if int(n ** (1/i)) == n ** (1/i):
+            return [n ** (1/i), i]
+    return None
+
+
+def is_perfect_power3(n):
+    """this is the perfect solution
+        utilises the perfect_power method of the sympy module
+
+    """
+    x,y = perfect_power(n)
+    return [x,y] or None
 
 
 test1 = print(is_perfect_power(4))
 test2 = print(is_perfect_power(9))
 test3 = print(is_perfect_power(81))
-test4 = print(is_perfect_power(32))
-test5 = print(is_perfect_power(8))
-# test6 = print(is_perfect_power(12345234))
+test4 = print(is_perfect_power2(32))
+test5 = print(is_perfect_power2(8))
+test6 = print(is_perfect_power2(10000))
+test7 = print(is_perfect_power2(45435424))
+test8 = print(is_perfect_power2(531441))
+test9 = print(is_perfect_power2(78125))
+test10 = print(is_perfect_power2(125))
+test11 = print(is_perfect_power3(216))
+test12 = print(is_perfect_power3(343))
+test13 = print(is_perfect_power3(16850581551))
