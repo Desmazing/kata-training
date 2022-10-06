@@ -4,6 +4,7 @@
 """
 
 
+import math
 from sympy import perfect_power
 
 
@@ -29,7 +30,7 @@ def is_perfect_power2(n):
     """this is more efficient compared to is_perfect_power()
         still not functional for all cases."""
 
-    for i in range(2, 100):
+    for i in range(2, 35):
         if int(n ** (1/i)) == n ** (1/i):
             return [n ** (1/i), i]
     return None
@@ -57,3 +58,5 @@ test10 = print(is_perfect_power2(125))
 test11 = print(is_perfect_power3(216))
 test12 = print(is_perfect_power3(343))
 test13 = print(is_perfect_power3(16850581551))
+
+# test14 = print(is_perfect_power2(16850581551))
