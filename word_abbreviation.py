@@ -2,13 +2,10 @@
     Abbreviate appropriately. e.g. internationalization == i18n
 """
 
-
 from string import *
 import re
 
-
 regex = re.compile('[a-z]{4,}', re.IGNORECASE)
-
 
 def replace(match):
     word = match.group(0)
