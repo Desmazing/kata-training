@@ -23,6 +23,7 @@ def multable(n):
 
 def multable2(n):
     """function to create a custom multiplication table
+        refactored from multable(n)
     Args:
         n(int): a limit for the mult table
     Returns
