@@ -22,3 +22,6 @@ def multable(n):
 
 
 test1 = print(multable(3))
+test2 = print(multable(4))
+test3 = print(multable(10))
+test4 = print(multable(34))
