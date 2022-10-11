@@ -8,7 +8,8 @@
 
 
 def seven(m, count = 0):
-    """function to determine divisibility by 7
+    """function to determine divisibility by 7: approach is recursion
+    
     Args:       m (int) 
     Returns:    tuple (last m, number of executions)
     """
