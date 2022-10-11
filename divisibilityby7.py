@@ -9,13 +9,13 @@
 
 def seven(m, count = 0):
     """function to determine divisibility by 7: approach is recursion
-    
+
     Args:       m (int) 
     Returns:    tuple (last m, number of executions)
     """
 
     if m < 100: return (m, count)
-    y, x = m % 10, m // 10
+    x, y = divmod(m, 10)
     count += 1
     result = x - (2 * y)
 
