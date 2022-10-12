@@ -32,15 +32,5 @@ def presses(phrase):
     return f"{sum(press_dict[i.upper()] for i in phrase)} presses"
 
 
-test1 = print(presses('HOW R U')) # should return 13 presses
-
-
-def pressesv2(phrase):
-    """ function to determine the no. of presses a user undertakes to 
-        write out a given phrase
-
-    Args:       str - phrase to be typed out
-    Returns:    int - no. of presses undertaken by the user
-    """
-
-
+test1 = print(presses('HOW R U')) # should return '13 presses'.
+test2 = print(presses('LOL')) # should return '9 presses'.
