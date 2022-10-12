@@ -1,5 +1,20 @@
 """
     Determine how many key presses a user has to do to write a phrase
+    on an old mobile phone keypad as below
+"""
+
+"""
+
+-------------------------------------
+|   1       |   ABC 2   |   DEF 3   |
+-------------------------------------
+|   GHI 4   |   JKL 5   |   MNO 6   |
+-------------------------------------
+|   PQRS 7  |   TUV 8   |   WXYZ 9  |
+-------------------------------------
+|     *     |    0  _   |      #    |
+-------------------------------------
+
 """
 
 
@@ -21,3 +36,14 @@ def presses(phrase):
 
 
 test1 = print(presses('HOW R U')) # should return 13 presses
+
+
+def pressesv2(phrase):
+    """ function to determine the no. of presses a user undertakes to 
+        write out a given phrase
+
+    Args:       str - phrase to be typed out
+    Returns:    int - no. of presses undertaken by the user
+    """
+
+
