@@ -1,6 +1,8 @@
-# these two functions simulate the implementation of a stack of cubes 
-# such that the top most cube is 1 in volume
-# only perfect stacks are considered.
+""" 
+    These two functions simulate the implementation of a stack of cubes 
+    such that the top most cube is 1 in volume...
+    only perfect stacks are considered.
+"""
 
 
 def find_nb(m):
