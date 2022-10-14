@@ -7,3 +7,10 @@
         7 is not strong because:
             7! = 5040 which is not equal to 7
 """
+
+
+def strong_number(num):
+    """Function to determine a strong number
+    Args:       num (int)   positive integer
+    Returns:    str : 'Strong!' or not 'Not Strong!'
+    """
