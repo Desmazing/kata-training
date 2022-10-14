@@ -39,9 +39,14 @@ def strong_number2(num):
     total = 0
     for i in str(num):
         total += strong2_fact(int(i))
+    return "Strong!" if num == total else "Not Strong!"
 
 
 
 test1 = print(strong_number(145))   # should return "Strong!"
 test2 = print(strong_number(7))     # should return "Not Strong!"
 test3 = print(strong_number(9))     # should return "Not Strong!"
+
+test1 = print(strong_number(145))   # should return "Strong!"
+test2 = print(strong_number2(7))     # should return "Not Strong!"
+test3 = print(strong_number2(9))     # should return "Not Strong!"
