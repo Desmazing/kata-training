@@ -42,11 +42,18 @@ def strong_number2(num):
     return "Strong!" if num == total else "Not Strong!"
 
 
+def strong_number3(num):
+    return "Strong!" if num == sum(math.factorial(int(i)) for i in str(num)) else "Not Strong!"
+
 
 test1 = print(strong_number(145))   # should return "Strong!"
 test2 = print(strong_number(7))     # should return "Not Strong!"
 test3 = print(strong_number(9))     # should return "Not Strong!"
-
-test1 = print(strong_number(145))   # should return "Strong!"
+print('======')
+test1 = print(strong_number2(145))   # should return "Strong!"
 test2 = print(strong_number2(7))     # should return "Not Strong!"
 test3 = print(strong_number2(9))     # should return "Not Strong!"
+print('======')
+test1 = print(strong_number3(145))   # should return "Strong!"
+test2 = print(strong_number3(7))     # should return "Not Strong!"
+test3 = print(strong_number3(9))     # should return "Not Strong!"
