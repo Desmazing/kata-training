@@ -1,5 +1,6 @@
 """
     Abbreviate appropriately. e.g. internationalization == i18n
+    How poweful is the regex module? Is it cross language?
 """
 
 from string import *

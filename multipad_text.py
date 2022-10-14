@@ -11,6 +11,8 @@
     -------------------------------------
     |     *     |    0  _   |      #    |
     -------------------------------------
+    
+    Smart phones saved the world
 
 """
 
@@ -32,5 +34,5 @@ def presses(phrase):
     return f"{sum(press_dict[i.upper()] for i in phrase)} presses"
 
 
-test1 = print(presses('HOW R U')) # should return '13 presses'.
-test2 = print(presses('LOL')) # should return '9 presses'.
+test1 = print(presses('HOW R U'))   # should return '13 presses'.
+test2 = print(presses('LOL'))       # should return '9 presses'.
