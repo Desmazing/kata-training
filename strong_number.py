@@ -43,6 +43,11 @@ def strong_number2(num):
 
 
 def strong_number3(num):
+    """Function to determine whether a number is strong or not
+    Args: num (int): positive integer 
+    Returns:    str : 'Strong!' or not 'Not Strong!'
+    """
+    
     return "Strong!" if num == sum(math.factorial(int(i)) for i in str(num)) else "Not Strong!"
 
 
