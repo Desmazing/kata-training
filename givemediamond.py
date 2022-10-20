@@ -1,10 +1,11 @@
-# print out diamonds
+"""
+    Print out diamonds
+"""
 
 
 def diamond(n):
     if n <=0 or n%2==0: return None
     elif n==1: return '*\n'
-    # elif n ==3: return " *\n***\n *\n"
     lst = []
     for i in range(1,n+1,2):
         x = (i*'*')
