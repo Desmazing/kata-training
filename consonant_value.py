@@ -1,7 +1,9 @@
 def solve(s):
     """Function to find the value of the longest consonant substring
-    Args:       s (string)
-    Returns:    int (consonant value)
+    Args:       
+            s (string)
+    Returns:    
+            int (consonant value)
     """
     max_ord = 0
     curr_ord = 0
