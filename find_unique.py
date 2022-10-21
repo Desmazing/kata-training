@@ -1,5 +1,7 @@
-# find the unique number in an array e.g. [1,2,1,1,1,1] should return 2
-# this function is meant for performance efficiency due to large arrays
+"""
+    find the unique number in an array e.g. [1,2,1,1,1,1] should return 2
+    this function is meant for performance efficiency due to large arrays
+"""
 
 
 def unique(n):
