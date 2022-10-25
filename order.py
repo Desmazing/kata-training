@@ -16,6 +16,17 @@ def get_order(order):
     menu_list = menu_pattern.split('|')
 
     retrieved_order = re.findall(menu_pattern, order, re.IGNORECASE)
-    
+    retrieved_order = [i.title() for i in retrieved_order]
 
-print(get_order('milkshakeonionringsburgerfries'))
+    res = {}
+    for i in retrieved_order:
+        res[i] = retrieved_order.count(i)
+
+    output = ''
+    for i in menu_list:
+        if i in res.keys():
+            output += (i + ' ') * res[i]
+    return output.rstrip()
+
+
+print(get_order('milkshakeonionringsburgerfriesburger'))
