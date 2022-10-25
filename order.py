@@ -18,6 +18,4 @@ def get_order(order):
     retrieved_order = re.findall(menu_pattern, order, re.IGNORECASE)
     
 
-    
-
 print(get_order('milkshakeonionringsburgerfries'))
