@@ -29,4 +29,19 @@ def get_order(order):
     return output.rstrip()
 
 
-print(get_order('milkshakeonionringsburgerfriesburger'))
+def get_order2(order):
+    """function to get order from a menu
+    Args:       order (str)
+    Returns:    str (correct order)
+    """
+    
+    menu = ['burger','fries','chicken','pizza','sandwich','onionrings','milkshake','coke']
+    clean_order = ""
+    for i in menu:
+        clean_order += (i.capitalize() + ' ') * order.count(i)
+    return clean_order.rstrip()
+
+
+
+test1 = print(get_order('milkshakeonionringsburgerfriesburger'))
+test2 = print(get_order2('milkshakeonionringsburgerfriesburger'))
