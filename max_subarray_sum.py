@@ -20,9 +20,9 @@ def max_sequence(arr):
     return max(sum_list)
 
 
-# the above method is not the most efficient. need to 
+# the above method is not the most efficient. need to refactor.
 
-
+test0 = print(max_sequence([])) # empty array should return 0
 test1 = print(max_sequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])) # should return 6
 test2 = print(max_sequence([7, 4, 11, -11, 39, 36, 10, -6, 37, -10, -32, 44, -26, -34, 43, 43]))
 # should return 155
