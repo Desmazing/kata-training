@@ -10,9 +10,7 @@ def max_sequence(arr):
     Returns:    int - maximum sum
     """
 
-    if len(arr) == 0:
-        return 0
-    sum_list = []
+    sum_list = [0]
     for i in range(len(arr)):
         for j in range(i+1, len(arr)):
             sum_list.append(sum(arr[i:j+1]))
