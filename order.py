@@ -11,7 +11,7 @@ def get_order(order):
     Args:       order (str)
     Returns:    str (correct order)
     """
-    
+
     menu_pattern = 'Burger|Fries|Chicken|Pizza|Sandwich|Onionrings|Milkshake|Coke'
     menu_list = menu_pattern.split('|')
 
@@ -24,7 +24,7 @@ def get_order(order):
 
     output = ''
     for i in menu_list:
-        if i in res.keys():
+        if i in res:
             output += (i + ' ') * res[i]
     return output.rstrip()
 
@@ -34,7 +34,7 @@ def get_order2(order):
     Args:       order (str)
     Returns:    str (correct order)
     """
-    
+
     menu = ['burger','fries','chicken','pizza','sandwich','onionrings','milkshake','coke']
     clean_order = ""
     for i in menu:
