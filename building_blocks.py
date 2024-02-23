@@ -24,5 +24,5 @@ class Block():
         return math.prod(self.arr)
     def get_surface_area(self):
         """method to return the block surface area"""
-        w,l,h = self.arr
-        return 2 * ((w*l) + (l*h) + (w*h))
+        width,length,height = self.arr
+        return 2 * ((width*length) + (length*height) + (width*height))
