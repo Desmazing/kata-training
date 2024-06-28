@@ -3,7 +3,9 @@ This kata involves the removal of any occurrence of string sections between pare
 
 """
 
+
 import re
+
 
 def remove_parentheses(st):
     """Function to remove any string sections enclosed in parenetheses 
@@ -20,6 +22,7 @@ def remove_parentheses(st):
     for i in x:
         st = st.replace(f'({i})', '')
     
-    return st.replace(')', '')
+    return st
 
-repr(remove_parentheses("example(unwanted thing)example"))
+
+print(repr(remove_parentheses("example(unwanted thing))example")))
