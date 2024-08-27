@@ -1,5 +1,4 @@
 """Complete solution so that the function will break up camel casing using a spacing between words"""
-1936755
 
 
 def solution1(s):
