@@ -18,4 +18,4 @@ def anagrams2(word, words):
 
 
 test1 = print(anagrams('abba', ['bbaa', 'aabb', 'abcd', 'efgh', 'abdf']))
-test2 = print(anagrams2('hello', ['lo', 'ehllo', 'lohel', 'hello', 'hel']))
+test2 = print(anagrams2('hello', ['lo', 'lehlo', 'lohel', 'hello', 'hel']))
