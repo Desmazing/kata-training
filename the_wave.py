@@ -3,6 +3,7 @@ Recreation of the Mexican Wave using strings
 - Lowercase letters simulate people sat down
 - Uppercase letters simulate people standing up
 - Spaces simulate empty seats
+Implemented using string slicing for ideal results
 """
 
 
@@ -13,12 +14,15 @@ def wave(people):
     returns:    List > to simulate the wave
     """
 
-    # str1 = ''
-    lst1 = []
+    my_string = ''
+    my_list = []
     for index, letter in enumerate(people):
-        print(index, letter)
-        lst1.append(people[index].replace(people[index], people[index].upper()))
+        if letter.isalpha():
+            my_string = people[:index] + people[index].upper() + people[index+1:]
+            my_list.append(my_string)
         continue
+    return my_list
 
-    print(lst1)
-wave("hello")
+
+print(repr(wave("hello")))
+print(repr(wave("two words")))
