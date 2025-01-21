@@ -37,10 +37,13 @@ def decrypt(text):
     return new_str
 
 
-print(repr(decrypt("elHlo")))
-print(repr(decrypt("ieLn")))
-
 print(repr(encrypt("Hello", 0)))
 print(repr(encrypt("Hello", 1)))
 print(repr(encrypt("Hello", 2)))
 print(repr(encrypt("Hello", 3)))
+
+print("_______________________")
+
+print(repr(decrypt("lHleo")))
+print(repr(decrypt("lleHo")))
+print(repr(decrypt("elHlo")))
