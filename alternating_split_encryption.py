@@ -17,21 +17,16 @@ def encrypt(text, n):
     Args: str > input string to be encrypted, int > No. of times to encrypt
     Returns: str > The output string after encryption
     """
-    x = ''
-
-    for i in range(n, 0, -1):
-        x = solver(text)
-
-    return x
-
-
-def solver(text):
-    """Prequel to encrypt"""
+    if n == 0:
+        return text
 
     evens = [j for i,j in enumerate(text) if not i % 2]
     odds = [j for i,j in enumerate(text) if i % 2]
+    new_text = ''.join(odds + evens)
+    return encrypt(new_text, n-1)
 
-    return ''.join(odds + evens)
 
-
-print(repr(encrypt("what now", 3)))
+print(repr(encrypt("Hello", 0)))
+print(repr(encrypt("Hello", 1)))
+print(repr(encrypt("Hello", 2)))
+print(repr(encrypt("Hello", 3)))
