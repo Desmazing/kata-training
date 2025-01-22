@@ -34,17 +34,18 @@ def declare_winner(fighter1, fighter2, first_attacker):
     """Battle simulation for fighters
     Args: fighter object 1, fighter object 2, str > first attacker in battle
     Returns: str > winner of the battle"""
-
+    winner = ''
     if fighter1.health <= 0:
-        return fighter2.name
+        winner = fighter2.name
     if fighter2.health <= 0:
-        return fighter1.name
+        winner = fighter1.name
     if fighter1.name == first_attacker and fighter1.health > 0 and fighter2.health > 0:
         fighter2.health -= fighter1.damage_per_attack
         return declare_winner(fighter1, fighter2, fighter2.name)
     if fighter2.name == first_attacker and fighter1.health > 0 and fighter2.health > 0:
         fighter1.health -= fighter2.damage_per_attack
         return declare_winner(fighter1, fighter2, fighter1.name)
+    return winner
 
 
 print(declare_winner(Fighter("Lew", 20, 2), Fighter("David", 10, 5), "Lew"))
