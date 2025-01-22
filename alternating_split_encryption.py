@@ -33,7 +33,8 @@ def decrypt(text):
     odd_indexed = text_list[:len(text_list) // 2]
     even_indexed = text_list[len(text_list) // 2:]
 
-    new_str = ''.join(str(a) + str(b) for a, b in zip_longest(even_indexed, odd_indexed, fillvalue=''))
+    new_str = ''.join(str(a) + str(b) for a, b in \
+                      zip_longest(even_indexed, odd_indexed, fillvalue=''))
     return new_str
 
 
@@ -42,7 +43,7 @@ print(repr(encrypt("Hello", 1)))
 print(repr(encrypt("Hello", 2)))
 print(repr(encrypt("Hello", 3)))
 
-print("_______________________")
+print("\n-------------\n")
 
 print(repr(decrypt("lHleo")))
 print(repr(decrypt("lleHo")))
