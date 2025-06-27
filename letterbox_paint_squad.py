@@ -12,6 +12,8 @@ def paint_letterboxes(start, finish):
     mylist = list(range(start, finish))
     myotherlist = list(map(str, mylist))
     print(myotherlist)
+    mythirdlist = [list(i) for i in myotherlist]
+    print(mythirdlist)
 
 
 paint_letterboxes(132, 137)
